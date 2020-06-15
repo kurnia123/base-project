@@ -1,7 +1,7 @@
 const path = require("path");
 const HtmlWebpackPlugin = require("html-webpack-plugin");
 
-let data = ["nav","index","standingTeam","detail"];
+let data = ["nav","index"];
 
 let generateHtmlPlugin = function() {
     let tmp = []
@@ -39,7 +39,6 @@ let generateHtmlPlugin = function() {
 module.exports = {
     entry: {
         index: "./src/script/view/index/index.js",
-        detail: "./src/script/view/detail/detail.js"
     },
     output: {
         filename: "[name]/[name]_bundle.js",
