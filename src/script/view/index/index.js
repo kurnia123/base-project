@@ -1,11 +1,13 @@
 import 'materialize-css/dist/css/materialize.min.css';
 import 'materialize-css/dist/js/materialize.min.js';
+import '../../../style/index/index.css';
 
 document.addEventListener("DOMContentLoaded",function () {  
-       let elems = document.querySelectorAll('.sidenav');
+    let elems = document.querySelectorAll('.sidenav');
     M.Sidenav.init(elems)
-    loadNav();
 
+
+    loadNav();
 
     function loadNav() {
         fetch("../nav.html")
@@ -17,7 +19,7 @@ document.addEventListener("DOMContentLoaded",function () {
                     elm.innerHTML = result
                 })
 
-                document.querySelectorAll(".topnav a, .sidenav a").forEach(elm => {
+                document.querySelectorAll(".topnav a, .topnavright a, .sidenav a").forEach(elm => {
                     elm.addEventListener("click", function (event) {
                         var sidenav = document.querySelector(".sidenav");
                         M.Sidenav.getInstance(sidenav).close();
@@ -54,16 +56,5 @@ document.addEventListener("DOMContentLoaded",function () {
             default:
                 break;
         }
-
-        // if (page === "home") {
-        //     LoadPageService.load(new HomePage())
-        // } else if (page === "save") {
-        //     LoadPageService.load(new SavePage())
-        // } else if(page === "standingTeam") {
-        //     let bodyContent = document.getElementById("body-content")
-        //     bodyContent.innerHTML = standingTeamPage;
-
-        //     LoadPageService.load(new StandingTeam())
-        // }
     }
 })

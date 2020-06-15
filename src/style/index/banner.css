@@ -1,0 +1,47 @@
+* {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    text-decoration: none;
+    box-sizing: border-box;
+    font-family: Roboto, Arial, Helvetica, sans-serif;
+}
+
+html,body {
+    height: 100%;
+}
+
+.progress {
+    position: absolute;
+}
+
+.colorRed {
+    color: red;
+}
+
+.container p {
+    text-align: center;
+    color: white;
+}
+
+.header__title {
+    font-weight: 400;
+    font-size: 2rem;
+}
+
+.header__description {
+    margin-top: 15px;
+    font-weight: 300;
+    font-size: 1rem;
+}
+
+.banner {
+    padding-top: 30px;
+    height: 100%;
+    width: auto;
+    background-color: grey;
+}
+
+.nav-wrapper {
+    background-color: #34495e;
+}

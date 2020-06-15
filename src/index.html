@@ -2,25 +2,61 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <link rel="manifest" href="./manifest.json">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Football App</title>
 </head>
 <body>
     <nav>
-        <div class="nav-wrapper blue-grey darken-3">
-            <a href="#" class="brand-logo" id="title">Logo</a>
+        <div class="nav-wrapper">
+            <a href="#" class="brand-logo center"><span style="color: white;">MOVIE</span> <span style="color: red;">KANG</span></a>
             <a href="#" data-target="mobile-demo" class="sidenav-trigger">☰</a>
-            
-            <ul class="topnav right hide-on-med-and-down"></ul>
+
+            <ul class="topnav left hide-on-med-and-down"></ul>
+            <ul class="topnavright right hide-on-med-and-down">
+                <li><a href="#"><i class="material-icons">search</i></a></li>
+                <li><a href="#"><i class="material-icons">notifications</i></a></li>
+                <li><a href="#"><i class="material-icons">refresh</i></a></li>
+            </ul>
+
             <ul class="sidenav" id="mobile-demo"></ul>
         </div>
-    </nav>
+      </nav>
     <!-- Process Loading -->
     <div class="progress" id="progress">
         <div class="indeterminate"></div>
     </div>
 
-    <div class="container" id="body-content"></div>
+    <article class="banner valign-wrapper">
+        <div class="container">
+            <p class="header__title">Millions of <span class="colorRed">movies</span> and <span class="colorRed">TV shows</span> to discover</p>
+            <p class="header__description">Watch movies & TV shows online or stream right to your smart TV, game console, PC, Mac, mobile, tablet and more. Discover</p>
+
+            <div class="search">
+                <form action="./result/result.html" method="GET">
+                    <div class="search__box">
+                        <input class="input__text" type="text" id="keyword" name="keyword" placeholder="search movie and TV show...">
+                        <input class="button_submit" type="submit" value="Search">
+                    </div>
+                </form>
+            </div>
+        </div>
+    </article>
+
+    <article class="popular">
+        <section class="wrap__header">
+            <span>What's Popular</span>
+            
+            <ul class="wrap__listItem">
+                <li class="listItem active" source="https://api.themoviedb.org/3/tv/popular?api_key=">On TV</li>
+                <li class="listItem" source="https://api.themoviedb.org/3/movie/now_playing?api_key=">Movie</li>
+            </ul>
+        </section>
+        <section class="wrap__listItemMovie">
+
+        </section>
+    </article>
+
+            
 </body>
 </html>
