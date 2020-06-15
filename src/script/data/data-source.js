@@ -6,7 +6,11 @@ class DataSource {
                 return response.json();
             })
             .then(responseJson => {
-                return Promise.resolve(responseJson);
+                if(responseJson.results != null) {
+                    return Promise.resolve(responseJson);
+                } else {
+                    return Promise.reject("Cannot find");
+                }
             })
     }
 }
