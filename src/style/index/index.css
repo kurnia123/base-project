@@ -10,3 +10,9 @@
     border-radius: 5px;
     padding: 5px;
 }
+
+@media (max-width: 800px) {
+    .button_submit {
+        width: 40px;
+    }
+}

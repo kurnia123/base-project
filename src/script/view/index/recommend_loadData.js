@@ -27,7 +27,7 @@ const addItemTVRecommend = function (data) {
         `
         <div class="itemMovie">
             <a href="#"><img class="itemMovie__img" src="https://image.tmdb.org/t/p/w500${items.poster_path}" alt=""></a>
-            <p class="itemMovie__title center-align">${items.title}</p>
+            <p class="itemMovie__title center-align">${items.title === undefined ? items.original_name : items.title}</p>
         </div>
         `
     })
