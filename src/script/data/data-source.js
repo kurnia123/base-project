@@ -6,7 +6,7 @@ class DataSource {
                 return response.json();
             })
             .then(responseJson => {
-                if(responseJson.results != null) {
+                if(responseJson != null) {
                     return Promise.resolve(responseJson);
                 } else {
                     return Promise.reject("Cannot find");
