@@ -9,6 +9,7 @@
     display: flex;
     flex-wrap: wrap;
     padding: 40px 5em;
+    justify-content: center;
 }
 
 .recommendation__content .itemMovie {
@@ -22,7 +23,11 @@
     }
 
     .recommendation__content {
-        justify-content: center;
-        align-items: center;
+        /* justify-content: center;
+        align-items: center; */
+        flex-direction: row;
+        overflow-y: hidden;
+        overflow-x: auto;
+        flex-wrap: nowrap;
     }
 }
