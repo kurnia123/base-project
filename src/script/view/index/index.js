@@ -1,6 +1,8 @@
 import 'materialize-css/dist/css/materialize.min.css';
 import 'materialize-css/dist/js/materialize.min.js';
 import '../../../style/index/index.css';
+import {loadDataTVPopuler} from "./popular_tv.js";
+import {loadDataRecommend} from "./recommend_loadData.js";
 
 document.addEventListener("DOMContentLoaded",function () {  
     let elems = document.querySelectorAll('.sidenav');
@@ -8,6 +10,35 @@ document.addEventListener("DOMContentLoaded",function () {
 
 
     loadNav();
+    loadDataTVPopuler();
+    loadDataRecommend();
+
+    let choiceItemPopuler = document.querySelectorAll("#choice_popular")
+    choiceItemPopuler.forEach(item => {
+        item.addEventListener("click",function() { 
+            
+            choiceItemPopuler.forEach(elm => {
+                elm.setAttribute("class","listItem")
+            })
+            
+            item.setAttribute("class","listItem active")
+            loadDataTVPopuler(item.getAttribute("source"))
+        })
+    })
+
+
+    let choiceItemRecommend = document.querySelectorAll("#choice_recommend")
+    choiceItemRecommend.forEach(item => {
+        item.addEventListener("click", function () {  
+
+            choiceItemRecommend.forEach(elm => {
+                elm.setAttribute("class","listItem")
+            })
+
+            item.setAttribute("class","listItem active");
+            loadDataRecommend(item.getAttribute("source"));
+        })
+    })
 
     function loadNav() {
         fetch("../nav.html")

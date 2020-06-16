@@ -22,16 +22,19 @@
             <ul class="sidenav" id="mobile-demo"></ul>
         </div>
       </nav>
-    <!-- Process Loading -->
-    <div class="progress" id="progress">
-        <div class="indeterminate"></div>
+      
+    <div class="forgrouund_blur">
     </div>
+
+
+    <!-- Process Loading -->
 
     <article class="banner valign-wrapper">
         <div class="container">
+
             <p class="header__title">Millions of <span class="colorRed">movies</span> and <span class="colorRed">TV shows</span> to discover</p>
             <p class="header__description">Watch movies & TV shows online or stream right to your smart TV, game console, PC, Mac, mobile, tablet and more. Discover</p>
-
+            
             <div class="search">
                 <form action="./result/result.html" method="GET">
                     <div class="search__box">
@@ -41,22 +44,68 @@
                 </form>
             </div>
         </div>
-    </article>
 
+    </article>
+    
     <article class="popular">
         <section class="wrap__header">
             <span>What's Popular</span>
             
             <ul class="wrap__listItem">
-                <li class="listItem active" source="https://api.themoviedb.org/3/tv/popular?api_key=">On TV</li>
-                <li class="listItem" source="https://api.themoviedb.org/3/movie/now_playing?api_key=">Movie</li>
+                <li id="choice_popular" class="listItem active" source="tv/popular?api_key=">On TV</li>
+                <li id="choice_popular" class="listItem" source="movie/popular?api_key=">Movie</li>
             </ul>
         </section>
+        
         <section class="wrap__listItemMovie">
-
+            
         </section>
     </article>
 
+
+    <article class="recommendation">
+        <section class="wrap__header">
+            <span>Recommended</span>
+            
+            <ul class="wrap__listItem">
+                <li id="choice_recommend" class="listItem active" source="tv/2/recommendations?api_key=">On TV</li>
+                <li id="choice_recommend" class="listItem" source="movie/2/recommendations?api_key=">Movie</li>
+            </ul>
+        </section>
+
+        <section class="recommendation__content">
+            
+        </section>
+
+
+    </article>
+
+
+    <footer class="page-footer">
+        <div class="container">
+            <div class="row">
+                <div class="col l6 s12">
+                    <h5 class="white-text"><span style="color: white;">MOVIE</span> <span style="color: red;">KANG</span></h5>
+                    <p class="grey-text text-lighten-4">You can use rows and columns here to organize your footer content.</p>
+                </div>
+                <div class="col l4 offset-l2 s12">
+                    <h5 class="white-text">Links</h5>
+                    <ul>
+                        <li><a class="grey-text text-lighten-3" href="#!">Link 1</a></li>
+                        <li><a class="grey-text text-lighten-3" href="#!">Link 2</a></li>
+                        <li><a class="grey-text text-lighten-3" href="#!">Link 3</a></li>
+                        <li><a class="grey-text text-lighten-3" href="#!">Link 4</a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+        <div class="footer-copyright">
+            <div class="container">
+            © 2014 Copyright Text
+            <a class="grey-text text-lighten-4 right" href="#!">More Links</a>
+            </div>
+        </div>
+    </footer>
             
 </body>
 </html>

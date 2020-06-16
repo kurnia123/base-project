@@ -1,4 +1,12 @@
 @import "./banner.css";
 @import "./search.css";
 @import "./popular.css";
+@import "./recommendation.css";
+@import "./footer.css";
 @import url('https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;500;900&display=swap');
+
+.active {
+    background-color: red;
+    border-radius: 5px;
+    padding: 5px;
+}
