@@ -1,5 +1,5 @@
-import 'materialize-css/dist/css/materialize.min.css';
-import 'materialize-css/dist/js/materialize.min.js';
+import "../../../../node_modules/materialize-css/dist/css/materialize.min.css";
+import "../../../../node_modules/materialize-css/dist/js/materialize.min.js";
 import '../../../style/index/index.css';
 import {loadDataTVPopuler} from "./popular_tv.js";
 import {loadDataRecommend} from "./recommend_loadData.js";

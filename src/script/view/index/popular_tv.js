@@ -37,13 +37,13 @@ const addItemTVPopular = function (data) {
 
 
 const slideShow = function(data) {
-    let count = data.length - 1;
+    let count = data.length - 2;
     let index = 1;
 
     let selectSlide = document.querySelector(".banner");
 
     setInterval(() => {
-        if (index > count) {
+        if (index >= count) {
             index = 1;
         } else {
             selectSlide.style.background = `url('https://image.tmdb.org/t/p/w780${data.results[index].backdrop_path}')`
