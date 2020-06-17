@@ -5,7 +5,7 @@
 @import "./footer.css";
 @import url('https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;500;900&display=swap');
 
-.active {
+.actived {
     background-color: red;
     border-radius: 5px;
     padding: 5px;
@@ -18,8 +18,14 @@ nav {
     z-index: 99999;
 }
 
+.btn-login
+{
+    width: 100%;
+}
+
 @media (max-width: 800px) {
     .button_submit {
         width: 40px;
     }
 }
+

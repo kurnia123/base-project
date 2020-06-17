@@ -1,7 +1,7 @@
 const path = require("path");
 const HtmlWebpackPlugin = require("html-webpack-plugin");
 
-let data = ["nav","index","search","detail"];
+let data = ["nav","navRight","index","search","detail"];
 
 let generateHtmlPlugin = function() {
     let tmp = []
@@ -16,6 +16,13 @@ let generateHtmlPlugin = function() {
                 })
             )
         } else if(item === "nav") {
+            tmp.push(
+                new HtmlWebpackPlugin({
+                    filename: `${item}.html`,
+                    template: `./src/${item}.html`,
+                })
+            )
+        } else if (item === "navRight") {
             tmp.push(
                 new HtmlWebpackPlugin({
                     filename: `${item}.html`,

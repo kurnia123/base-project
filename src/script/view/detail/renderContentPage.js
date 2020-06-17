@@ -19,8 +19,12 @@ let getVideoMovie = (result,type) => {
 }
 
 const renderResult = result => {
-    let addVideo = document.querySelector(".video")
-    addVideo.setAttribute("src",`https://www.youtube.com/embed/${result.results[0].key}`)
+    let addVideo = document.querySelector(".trailer-video")
+    addVideo.innerHTML = `
+        <h4 class="content">TRAILER</h4>
+        <iframe class="video" width="560" height="315" src="https://www.youtube.com/embed/${result.results[0].key}" frameborder="0"allowfullscreen></iframe>
+
+    `
 }
 
 const fallbackResult = results => {

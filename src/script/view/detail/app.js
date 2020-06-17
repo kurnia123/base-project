@@ -2,7 +2,7 @@ import "../../../../node_modules/materialize-css/dist/css/materialize.min.css";
 import "../../../../node_modules/materialize-css/dist/js/materialize.min.js";
 import "../../../style/detail/detail.css";
 
-import loadNav from "../index/renderNav.js";
+import {loadNav} from "../index/renderNav.js";
 import {API_KEY,BASE_URL} from "../../key/api-key.js";
 import DataSource from "../../data/data-source.js";
 import renderContentPage from "./renderContentPage.js";

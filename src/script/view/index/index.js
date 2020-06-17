@@ -2,7 +2,7 @@ import "../../../../node_modules/materialize-css/dist/css/materialize.min.css";
 import "../../../../node_modules/materialize-css/dist/js/materialize.min.js";
 import '../../../style/index/index.css';
 
-import loadNav from "../index/renderNav.js"
+import {loadNav} from "../index/renderNav.js"
 import {loadDataTVPopuler} from "./popular_tv.js";
 import {loadDataRecommend} from "./recommend_loadData.js";
 
@@ -10,7 +10,9 @@ document.addEventListener("DOMContentLoaded",function () {
     let elems = document.querySelectorAll('.sidenav');
     M.Sidenav.init(elems)
 
+
     loadNav();
+    
     loadDataTVPopuler();
     loadDataRecommend();
 
@@ -40,8 +42,5 @@ document.addEventListener("DOMContentLoaded",function () {
             loadDataRecommend(item.getAttribute("source"));
         })
     })
-
-    
-    loadNav();
 
 })

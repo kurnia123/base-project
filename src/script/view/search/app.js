@@ -15,36 +15,51 @@ document.addEventListener("DOMContentLoaded",function () {
     let select_element = document.querySelector(".content");
     let tmp = "";
 
+
+    console.log(url_combain)
+
+
     const renderResult = results => {
+        select_element.style.height = "auto"
+
         console.log(results)
         results.results.forEach(element => {
-            tmp += `
-            <div class="row">
-                <div class="col">
-                    <a href="../detail/detail.html?id=${element.id}&type=${element.original_title === undefined ? "tv" : "movie"}">
-                        <div class="card">
-                            <div class="card-image">
-                                <img src="https://image.tmdb.org/t/p/w300${element.backdrop_path}">
-                                <span class="card-title">${element.original_title}</span>
-                                <a class="btn-floating halfway-fab waves-effect waves-light red"><i class="material-icons">favorite_border</i></a>
+            
+            if (element.backdrop_path === undefined || element.backdrop_path === null) {
+                return
+            } else {
+                tmp += `
+                <div class="row">
+                    <div class="col">
+                        <a href="../detail/detail.html?id=${element.id}&type=${element.original_title === undefined ? "tv" : "movie"}">
+                            <div class="card">
+                                <div class="card-image">
+                                    <img src="https://image.tmdb.org/t/p/w300${element.backdrop_path}">
+                                    <span class="card-title">${element.original_title === undefined ? element.original_name : element.original_title}</span>
+                                    <a class="btn-floating halfway-fab waves-effect waves-light red"><i class="material-icons">favorite_border</i></a>
+                                </div>
+                                <div class="card-content">
+                                    <p>${element.overview === undefined ? element.known_for[0].overview.slice(0,50) : element.overview.slice(0,50)}...</p>
+                                    <a href="../detail/detail.html?id=${element.id}&type=${element.original_title === undefined ? "tv" : "movie"}"><p>Read more..</p></a>
+                                </div>
                             </div>
-                            <div class="card-content">
-                                <p>${element.overview.slice(0,50)}...</p>
-                                <a href="../detail/detail.html?id=${element.id}&type=${element.original_title === undefined ? "tv" : "movie"}"><p>Read more..</p></a>
-                            </div>
-                        </div>
-                    </a>
+                        </a>
+                    </div>
                 </div>
-            </div>
-            `
-        });
+                `
+            }
 
+        });
         select_element.innerHTML = tmp
     }
     
     const fallbackResult = message => {
+        select_element.style.height = "100%";
+        select_element.innerHTML = `<p style="color:white;">Data Tidak Ada : ${message}</p>`
+
         console.log(message)
     }
+
 
     DataSource.loadData(url_combain)
     .then(renderResult)
