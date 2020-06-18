@@ -1,6 +1,6 @@
 # Web Site Info Film MOVIEKANG
 
-![alt text](https://drive.google.com/file/d/1D7FR5o56vDd9ekfGm9gVm6w3j_eCzWmb/view?usp=sharing)
+[Imgur](https://imgur.com/do4wkSL)
 
 ![alt text](https://drive.google.com/file/d/1JrXmirFx2bD2IECKo3qT6o5xXD9j4i79/view?usp=sharing)
 
