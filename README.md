@@ -1,8 +1,8 @@
 # Web Site Info Film MOVIEKANG
 
-![](./img/homePage-mobile.png?raw=true "Home Page Mobile")
+![Home Page Mobile](./img/homePage-mobile.png?raw=true "Home Page Mobile")
 
-![](./img/homePage-PC.png?raw=true "Home Page PC")
+![Home Page PC](./img/homePage-PC.png?raw=true "Home Page PC")
 
 # How to Use
 ## requirements
