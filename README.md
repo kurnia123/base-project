@@ -1,8 +1,8 @@
 # Web Site Info Film MOVIEKANG
 
-[Imgur](https://imgur.com/do4wkSL)
+![](./img/homePage-mobile.png?raw=true "Home Page Mobile")
 
-![alt text](https://drive.google.com/file/d/1JrXmirFx2bD2IECKo3qT6o5xXD9j4i79/view?usp=sharing)
+![](./img/homePage-PC.png?raw=true "Home Page PC")
 
 # How to Use
 ## requirements
