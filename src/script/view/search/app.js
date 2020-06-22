@@ -30,7 +30,7 @@ document.addEventListener("DOMContentLoaded",function () {
             } else {
                 tmp += `
                 <div class="row">
-                    <div class="col">
+                    <div class="col s12 m6">
                         <a href="../detail/detail.html?id=${element.id}&type=${element.original_title === undefined ? "tv" : "movie"}">
                             <div class="card">
                                 <div class="card-image">

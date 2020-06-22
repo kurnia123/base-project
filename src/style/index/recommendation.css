@@ -20,16 +20,16 @@
 
 @media (max-width: 800px) {
     .recommendation__content .itemMovie {
-        margin: 20px 10px;
+        margin: 0px 20px;
     }
 
     .recommendation__content {
-        /* justify-content: center;
-        align-items: center; */
         flex-direction: row;
         overflow-y: hidden;
         overflow-x: auto;
         flex-wrap: nowrap;
+        padding: 40px 1em;
+        justify-content: flex-start;
     }
 
     .recommendation__content::-webkit-scrollbar {
