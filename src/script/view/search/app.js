@@ -35,10 +35,10 @@ document.addEventListener("DOMContentLoaded",function () {
                             <div class="card">
                                 <div class="card-image">
                                     <img src="https://image.tmdb.org/t/p/w300${element.backdrop_path}">
-                                    <span class="card-title">${element.original_title === undefined ? element.original_name : element.original_title}</span>
                                     <a class="btn-floating halfway-fab waves-effect waves-light red"><i class="material-icons">favorite_border</i></a>
                                 </div>
                                 <div class="card-content">
+                                    <span class="card-title">${element.original_title === undefined ? element.original_name : element.original_title}</span>
                                     <p>${element.overview === undefined ? element.known_for[0].overview.slice(0,50) : element.overview.slice(0,50)}...</p>
                                     <a href="../detail/detail.html?id=${element.id}&type=${element.original_title === undefined ? "tv" : "movie"}"><p>Read more..</p></a>
                                 </div>
