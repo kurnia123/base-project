@@ -1,4 +1,4 @@
-# Web Site Info Film MOVIEKANG
+# Website Info Film (MOVIEKANG)
 
 ![Home Page Mobile](./img/homePage-mobile.png?raw=true "Home Page Mobile")
 
