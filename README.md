@@ -1,4 +1,4 @@
-# Website Info Film (MOVIEKANG)
+# 🌎 Website Info Film (MOVIEKANG) :octocat:
 
 ![Home Page Mobile](./img/homePage-mobile.png?raw=true "Home Page Mobile")
 
@@ -21,7 +21,7 @@
    ```
 
 ## Link Website
-[click here](https://moviekang-c320d.web.app/)
+🌎 [click here](https://moviekang-c320d.web.app/)
 
 
 ## Reference
