@@ -1,4 +1,7 @@
-# 🌎 Website Info Film (MOVIEKANG) :octocat:
+# 🌎 Website Info Film (MOVIEKANG)
+
+[![node](https://camo.githubusercontent.com/3a90037702d0a1ceb48dae083cf4a31fb464eadf/687474703a2f2f696d672e736869656c64732e696f2f6e6f64652f762f67682d6261646765732e737667)]
+
 
 ![Home Page Mobile](./img/homePage-mobile.png?raw=true "Home Page Mobile")
 
@@ -21,7 +24,7 @@
    ```
 
 ## Link Website
-🌎 [click here](https://moviekang-c320d.web.app/)
+🌎 [click here](https://moviekang-c320d.web.app/) :octocat:
 
 
 ## Reference
