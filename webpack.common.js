@@ -1,7 +1,7 @@
 const path = require("path");
 const HtmlWebpackPlugin = require("html-webpack-plugin");
 
-let data = ["nav","navRight","index","search","detail"];
+let data = ["nav","navRight","index","search","detail","footer"];
 
 let generateHtmlPlugin = function() {
     let tmp = []
