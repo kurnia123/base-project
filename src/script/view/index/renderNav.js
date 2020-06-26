@@ -4,7 +4,7 @@ function loadNav() {
     
     loadSideNav();
 
-    fetch("../nav.html")
+    fetch("../component/nav.html")
         .then(function respons(value) {
             return value.text();
         })
@@ -31,7 +31,7 @@ function loadNav() {
 
 
 function loadNavRight() {
-    fetch("../navRight.html")
+    fetch("../component/navRight.html")
         .then(function respons(value) {
             return value.text();
         })
@@ -56,7 +56,7 @@ function loadNavRight() {
 
 
 function loadSideNav() {
-    const urls = ["../nav.html","../navRight.html"];
+    const urls = ["../component/nav.html","../component/navRight.html"];
 
     Promise.all(urls.map(url => fetch(url)
         .then(resolve => {

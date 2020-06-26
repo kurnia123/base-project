@@ -2,7 +2,7 @@
 export default function fetchFooterHTML() {
     let selectElement = document.querySelector(".page-footer");
 
-    fetch("../footer/footer.html")
+    fetch("../component/footer.html")
     .then(function (value) {
         return value.text();
     })

@@ -1,32 +1,35 @@
 const path = require("path");
 const HtmlWebpackPlugin = require("html-webpack-plugin");
+const gg = new RegExp('/[a-zA-Z0-9]+\.html/g');
 
-let data = ["nav","navRight","index","search","detail","footer"];
+let data = [,"index","search","detail"];
+let dataComponent = ["footer","nav","navRight"];
+
 
 let generateHtmlPlugin = function() {
     let tmp = []
+
+    generatePage(data => {
+        tmp.push(...data);
+    });
+    generateComponent(data => {
+        tmp.push(...data);
+    });
+    
+    return tmp;
+}
+
+
+
+let generatePage = function (callback) {  
+    let tmp = []
     data.forEach(item => {
-        
-        if(item === "index") {
+        if (item === "index") {
             tmp.push(
                 new HtmlWebpackPlugin({
                     filename: `index.html`,
                     template: `./src/index.html`,
                     chunks: [`${item}`]
-                })
-            )
-        } else if(item === "nav") {
-            tmp.push(
-                new HtmlWebpackPlugin({
-                    filename: `${item}.html`,
-                    template: `./src/${item}.html`,
-                })
-            )
-        } else if (item === "navRight") {
-            tmp.push(
-                new HtmlWebpackPlugin({
-                    filename: `${item}.html`,
-                    template: `./src/${item}.html`,
                 })
             )
         } else {
@@ -39,9 +42,25 @@ let generateHtmlPlugin = function() {
             )
         }
 
-    });
-    return tmp;
+    })
+    callback(tmp);
 }
+
+let generateComponent = function (callback) {
+    let tmp = []
+    dataComponent.forEach(item => {
+        tmp.push(
+            new HtmlWebpackPlugin({
+                filename: `component/${item}.html`,
+                template: `./src/template/component/${item}.html`,
+                chunks: [``]
+            })
+        )
+
+    })
+    callback(tmp);
+}
+
 
 module.exports = {
     entry: {
