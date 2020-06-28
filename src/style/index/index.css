@@ -5,9 +5,9 @@
 @import "./footer.css";
 @import url('https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;500;900&display=swap');
 
-.actived {
+.on-active {
     background-color: red;
-    border-radius: 5px;
+    border-radius: 10px;
     padding: 5px;
 }
 

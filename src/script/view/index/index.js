@@ -26,7 +26,7 @@ document.addEventListener("DOMContentLoaded",function () {
                 elm.setAttribute("class","listItem")
             })
             
-            item.setAttribute("class","listItem actived")
+            item.setAttribute("class","listItem on-active")
             loadDataTVPopuler(item.getAttribute("source"))
         })
     })
@@ -40,7 +40,7 @@ document.addEventListener("DOMContentLoaded",function () {
                 elm.setAttribute("class","listItem")
             })
 
-            item.setAttribute("class","listItem actived");
+            item.setAttribute("class","listItem on-active");
             loadDataRecommend(item.getAttribute("source"));
         })
     })
