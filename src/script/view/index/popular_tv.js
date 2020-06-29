@@ -39,21 +39,40 @@ const addItemTVPopular = function (data) {
 
 
 const slideShow = function(data) {
-    let count = data.length - 2;
-    let index = 1;
+    
+    let selectSlide = document.querySelector(".carousel");
+    let tmp = ``
+    data.forEach(item => {
+        tmp += `<a class="carousel-item" href="#"><img src="https://image.tmdb.org/t/p/w780/${item.backdrop_path}"></a>`;
+    })
+    selectSlide.innerHTML = tmp;
 
-    let selectSlide = document.querySelector(".banner");
+    let elemsCarousel = document.querySelector('.carousel');
+    let instanceCarousel = M.Carousel.init(elemsCarousel,{fullWidth:true})
+    autoPlay();
 
-    setInterval(() => {
-        if (index >= count) {
-            index = 1;
-        } else {
-            selectSlide.style.background = `url('https://image.tmdb.org/t/p/w780${data[index].backdrop_path}')`
-            selectSlide.style.backgroundSize = "cover";
-            selectSlide.style.backgroundRepeat = "no-repeat";
-            index++
-        }
-    },4000)
+    function autoPlay() {
+        instanceCarousel.next();
+        setTimeout(autoPlay, 4500);
+    }
+
+
+    // let count = data.length - 2;
+    // let index = 1;
+
+
+    // setInterval(() => {
+    //     if (index >= count) {
+    //         index = 1;
+    //     } else {
+    //         selectSlide.style.background = `url('https://image.tmdb.org/t/p/w780${data[index].backdrop_path}')`
+    //         selectSlide.style.backgroundSize = "cover";
+    //         selectSlide.style.backgroundRepeat = "no-repeat";
+    //         index++
+    //     }
+    // },4000)
 }
+
+
 
 export {loadDataTVPopuler};

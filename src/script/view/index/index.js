@@ -8,12 +8,11 @@ import {loadDataTVPopuler} from "./popular_tv.js";
 import {loadDataRecommend} from "./recommend_loadData.js";
 
 document.addEventListener("DOMContentLoaded",function () {  
-    let elems = document.querySelectorAll('.sidenav');
-    M.Sidenav.init(elems)
-
-
-    loadNav();
     
+    let elems = document.querySelectorAll('.sidenav');
+    let instanceSideNav = M.Sidenav.init(elems)
+    
+    loadNav();
     loadDataTVPopuler();
     loadDataRecommend();
     fetchFooterHTML();
