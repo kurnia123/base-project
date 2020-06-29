@@ -2,7 +2,7 @@ import "../../../../node_modules/materialize-css/dist/css/materialize.min.css";
 import "../../../../node_modules/materialize-css/dist/js/materialize.min.js";
 import "../../../style/detail/detail.css";
 
-import fetchFooterHTML from "../footer/app.js";
+import fetchFooterHTML from "../component/footer/app.js";
 import {loadNav} from "../index/renderNav.js";
 import {API_KEY,BASE_URL} from "../../key/api-key.js";
 import DataSource from "../../data/data-source.js";

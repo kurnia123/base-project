@@ -1,4 +1,5 @@
 import loadPage from "./loadPageFromNav.js";
+import navRoute from "../../route/routing-url.js";
 
 function loadNav() {
     
@@ -17,6 +18,9 @@ function loadNav() {
                 elm.addEventListener("click", function (event) {
                     var sidenav = document.querySelector(".sidenav");
                     M.Sidenav.getInstance(sidenav).close();
+
+                    let page = event.target.getAttribute("href").substr(1);
+                    navRoute(page);
                 })
             })
         })
