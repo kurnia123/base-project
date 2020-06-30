@@ -36,7 +36,10 @@ document.addEventListener("DOMContentLoaded",function () {
             }
         })
         selectElm.innerHTML = tmp;
-        M.Carousel.init(selectElm)
+        M.Carousel.init(selectElm,{
+            numVisible:9,
+            noWrap: true,
+        })
     }
 
 

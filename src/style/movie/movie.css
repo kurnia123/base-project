@@ -50,3 +50,29 @@ nav {
     font-family: 'Roboto', sans-serif;
     font-weight: bold;
 }
+
+.carousel .carousel-item > img {
+    border-radius: 15px;
+}
+
+.valign-wrapper {
+    flex-direction: column;
+    justify-content: center;
+}
+
+.tittle-content {
+    font-family: 'Roboto';
+    margin-top: 20px;
+    font-size: 3em;
+    font-weight: 300;
+}
+
+@media (min-width: 900px) {
+    .carousel {
+        height: 800px;
+    }
+    
+    .carousel .carousel-item {
+        width: 300px;
+    }
+}
