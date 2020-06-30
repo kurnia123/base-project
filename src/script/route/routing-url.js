@@ -6,6 +6,8 @@ function navRoute(route) {
     if (route === "index") {
         console.log("cek BaseURL : " + _baseUrl)
         window.location.href = `${_protocol}//${_baseUrl}/${route}.html`;
+    } else if (route === "login") {
+        return;
     } else {
         window.location.href = `${_protocol}//${_baseUrl}/${route}/${route}.html`;      
     }

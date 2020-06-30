@@ -9,7 +9,7 @@ import fetchFooterHTML from "../component/footer/app.js";
 import {loadNav} from "../index/renderNav.js"
 
 document.addEventListener("DOMContentLoaded",function () {
-    let url = `${BASE_URL + "movie/popular?api_key=" + API_KEY}&language=en-US&page=1`
+    let url = `${BASE_URL + "tv/popular?api_key=" + API_KEY}&language=en-US&page=1`
     let selectElm = document.querySelector(".carousel")
     let tmp = ``;
 
