@@ -35,7 +35,6 @@ nav {
 .banner{
     width: 100%;
     /* background-image: url(banner.jpg); */
-    background-color: tomato;
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center;

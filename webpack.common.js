@@ -2,7 +2,7 @@ const path = require("path");
 const HtmlWebpackPlugin = require("html-webpack-plugin");
 const gg = new RegExp('/[a-zA-Z0-9]+\.html/g');
 
-let data = [,"index","search","detail"];
+let data = [,"index","search","detail","movie"];
 let dataComponent = ["footer","nav","navRight"];
 
 
@@ -67,6 +67,7 @@ module.exports = {
         index: "./src/script/view/index/index.js",
         search: "./src/script/view/search/app.js",
         detail: "./src/script/view/detail/app.js",
+        movie: "./src/script/view/movie/app.js",
     },
     output: {
         filename: "[name]/[name]_bundle.js",

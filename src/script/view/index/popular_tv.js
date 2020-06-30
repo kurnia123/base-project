@@ -55,22 +55,6 @@ const slideShow = function(data) {
         instanceCarousel.next();
         setTimeout(autoPlay, 4500);
     }
-
-
-    // let count = data.length - 2;
-    // let index = 1;
-
-
-    // setInterval(() => {
-    //     if (index >= count) {
-    //         index = 1;
-    //     } else {
-    //         selectSlide.style.background = `url('https://image.tmdb.org/t/p/w780${data[index].backdrop_path}')`
-    //         selectSlide.style.backgroundSize = "cover";
-    //         selectSlide.style.backgroundRepeat = "no-repeat";
-    //         index++
-    //     }
-    // },4000)
 }
 
 

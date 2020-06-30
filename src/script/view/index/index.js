@@ -1,6 +1,7 @@
 import "../../../../node_modules/materialize-css/dist/css/materialize.min.css";
 import "../../../../node_modules/materialize-css/dist/js/materialize.min.js";
 import '../../../style/index/index.css';
+import "../component/login-popUp/login-popUp.js"
 
 import fetchFooterHTML from "../component/footer/app.js";
 import {loadNav} from "../index/renderNav.js"
