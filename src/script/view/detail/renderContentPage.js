@@ -34,13 +34,13 @@ const renderResultReview = result => {
     if (result.results.length === 0) {
         selectElmReview.innerHTML = `
             <h4 class="content">REVIEW</h4>
-            <p>From : Null</p>
+            <p>From : <b>Null</b></p>
             <p>Null</p>
         `;
     } else {
         selectElmReview.innerHTML = `
             <h4 class="content">REVIEW</h4>
-            <p>From : ${result.results[0].author}</p>
+            <p>From : <b>${result.results[0].author}</b></p>
             <p>${result.results[0].content}</p>
         `;
     }

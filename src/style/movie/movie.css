@@ -65,6 +65,7 @@ nav {
     margin-top: 20px;
     font-size: 3em;
     font-weight: 300;
+    color: white;
 }
 
 @media (min-width: 900px) {
