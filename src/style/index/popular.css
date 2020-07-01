@@ -46,7 +46,11 @@ article {
 }
 
 .wrap__listItemMovie::-webkit-scrollbar {
-    display: none;
+    height: 0.5rem;
+}
+
+.wrap__listItemMovie::-webkit-scrollbar-thumb {
+    background: #3e556b;
 }
 
 .itemMovie {
