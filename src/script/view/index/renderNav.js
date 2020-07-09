@@ -1,4 +1,3 @@
-import loadPage from "./loadPageFromNav.js";
 import navRoute from "../../route/routing-url.js";
 
 function loadNav() {
@@ -13,7 +12,7 @@ function loadNav() {
             document.querySelectorAll(".topnav").forEach(elm => {
                 elm.innerHTML = result
             })
-
+            
             document.querySelectorAll(".topnav a, .sidenav a").forEach(elm => {
                 elm.addEventListener("click", function (event) {
                     var sidenav = document.querySelector(".sidenav");

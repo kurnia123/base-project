@@ -12,7 +12,7 @@ document.addEventListener("DOMContentLoaded",function () {
     
     let elems = document.querySelectorAll('.sidenav');
     let instanceSideNav = M.Sidenav.init(elems)
-    
+
     loadNav();
     loadDataTVPopuler();
     loadDataRecommend();

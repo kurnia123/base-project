@@ -2,7 +2,7 @@ const path = require("path");
 const HtmlWebpackPlugin = require("html-webpack-plugin");
 const gg = new RegExp('/[a-zA-Z0-9]+\.html/g');
 
-let data = [,"index","search","detail","movie","tvSeries"];
+let dataPage = [,"index","search","detail","movie","tvSeries","genre"];
 let dataComponent = ["footer","nav","navRight"];
 
 
@@ -23,7 +23,7 @@ let generateHtmlPlugin = function() {
 
 let generatePage = function (callback) {  
     let tmp = []
-    data.forEach(item => {
+    dataPage.forEach(item => {
         if (item === "index") {
             tmp.push(
                 new HtmlWebpackPlugin({
@@ -68,7 +68,8 @@ module.exports = {
         search: "./src/script/view/search/app.js",
         detail: "./src/script/view/detail/app.js",
         movie: "./src/script/view/movie/app.js",
-        tvSeries: "./src/script/view/tvSeries/app.js"
+        tvSeries: "./src/script/view/tvSeries/app.js",
+        genre: "./src/script/view/genre/app.js"
     },
     output: {
         filename: "[name]/[name]_bundle.js",

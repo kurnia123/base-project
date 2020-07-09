@@ -3,11 +3,11 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>TV Series Page</title>
+    <title>Genre</title>
     <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
 </head>
 <body>
-
+    
     <login-popup></login-popup>
     
     <header>
@@ -24,11 +24,30 @@
             </div>
         </nav>
 
-        <article class="content valign-wrapper">
-            <div class="carousel">
+        <article class="content">
+
+            <div class="choiche_content">
+                <a class='dropdown-trigger btn red' href='#' data-target='dropdown1'> <span class="watching-type choiche-content">Movie</span> 
+                    <i class="material-icons">arrow_drop_down</i>
+                </a>
+                <a class='dropdown-trigger btn red' href='#' data-target='dropdown2'> <span class="watching-genre choiche-content">Genre</span>
+                    <i class="material-icons">arrow_drop_down</i>
+                </a>
+
+    
+                <ul id='dropdown1' class='dropdown-content'>
+                    <li><a class="btn-type-watch" href="#!">Movie</a></li>
+                    <li><a class="btn-type-watch" href="#!">TV Show</a></li>
+                </ul>
+                <ul id='dropdown2' class='dropdown-content'></ul>
+
+                <p class="title-content">List <span class="title-item">Movie</span> Series</p>
             </div>
 
-            <p class="tittle-content">List TV Series</p>
+            <section class="wrap__listItem">
+
+            </section>
+
         </article>
     </header>
 
@@ -42,5 +61,6 @@
             $('.modal').modal();
         });
     </script>
+
 </body>
 </html>
